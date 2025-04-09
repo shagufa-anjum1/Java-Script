@@ -22,27 +22,95 @@
             ">%</button>
 
             <button class="button" onclick="
-            displayval -= '1';
+            displayval -= 'X';
             document.querySelector('#input').value = displayval
-            ">||</button>
+            ">X</button>
 
-            <button class="button">/</button>
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">X</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">-</button>
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
-            <button class="button">00</button>
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button">=</button>
+            <button class="button" onclick="
+            displayval = displayval + '/';
+            document.querySelector('#input').value = displayval
+            ">/</button>
+
+            <button class="button" onclick="
+            displayval += '7';
+            document.querySelector('#input').value = displayval
+            ">7</button>
+
+            <button class="button" onclick="
+            displayval += '8';
+            document.querySelector('#input').value = displayval
+            ">8</button>
+
+            <button class="button" onclick="
+            displayval += '9';
+            document.querySelector('#input').value = displayval
+            ">9</button>
+
+            <button class="button" onclick="
+            displayval += '*';
+            document.querySelector('#input').value = displayval
+            ">X</button>
+            
+            <button class="button" onclick="
+            displayval += '4';
+            document.querySelector('#input').value = displayval
+            ">4</button>
+
+            <button class="button" onclick="
+            displayval += '5';
+            document.querySelector('#input').value = displayval
+            ">5</button>
+
+            <button class="button" onclick="
+            displayval += '6';
+            document.querySelector('#input').value = displayval
+            ">6</button>
+
+            <button class="button" onclick="
+            displayval += '-';
+            document.querySelector('#input').value = displayval
+            ">-</button>
+
+            <button class="button" onclick="
+            displayval += '1';
+            document.querySelector('#input').value = displayval
+            ">1</button>
+
+            <button class="button" onclick="
+            displayval += '2';
+            document.querySelector('#input').value = displayval
+            ">2</button>
+
+            <button class="button" onclick="
+            displayval += '3';
+            document.querySelector('#input').value = displayval
+            ">3</button>
+
+            <button class="button" onclick="
+            displayval += '+';
+            document.querySelector('#input').value = displayval
+            ">+</button>
+
+            <button class="button" onclick="
+            displayval += '00';
+            document.querySelector('#input').value = displayval
+            ">00</button>
+
+            <button class="button" onclick="
+            displayval += '0';
+            document.querySelector('#input').value = displayval
+            ">0</button>
+
+            <button class="button" onclick="
+            displayval += '.';
+            document.querySelector('#input').value = displayval
+            ">.</button>
+
+            <button class="button" onclick="
+            displayval = eval(displayval);
+            document.querySelector('#input').value = displayval
+            ">=</button>
+
         </div>
     </div>
 
