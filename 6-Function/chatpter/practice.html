@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+    </style>
+    <title>Cricket play Game</title>
+</head>
+<body>
+
+   <h1>Bat Ball Stump Gmaes</h1> 
+   <div>
+    <button onclick=" 
+    console.log('yoh have choosen Bat');
+     genrateComputerChoice();
+    
+     genrateReusltMsg();
+      
+    
+    ">Bat</button>
+
+
+    <button onclick="
+    console.log('yoh have choosen Ball');
+     genrateComputerChoice();
+    
+       
+     genrateReusltMsg();
+    
+    
+    ">Ball</button>
+
+
+    <button  onclick="
+    console.log('you have choosen Stump');
+     genrateComputerChoice();
+
+     genrateReusltMsg();
+    
+    
+    ">Stump</button>
+
+   </div>
+
+   <script>
+        let computerChoice;
+        function genrateComputerChoice(){
+            let randomNumber = Math.random()*3;
+            if(randomNumber >0 && randomNumber <=1){
+                computerChoice = 'Bat';
+            } else if(randomNumber >1 && randomNumber <=2){
+                computerChoice = 'Ball';
+            } else {
+                computerChoice = 'Stump';
+            }
+        }
+        genrateComputerChoice();
+
+        let resultMsg;
+
+        function genrateReusltMsg(userChoice){
+            if(computerChoice === 'Bat'){
+                resultMsg = 'You have choosen ' + userChoice + ' and computer has choosen Bat. It is a Tie!';
+            } else if(computerChoice === 'Ball'){
+                resultMsg = 'You have choosen ' + userChoice + ' and computer has choosen Ball. You Win!';
+            } else {
+                resultMsg = 'You have choosen ' + userChoice + ' and computer has choosen Stump. You Lose!';
+            }
+            alert(resultMsg);
+        }
+        genrateReusltMsg();
+   </script>
+</body>
+</html>
