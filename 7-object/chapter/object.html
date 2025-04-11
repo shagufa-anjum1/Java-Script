@@ -16,8 +16,14 @@
             productColor: 'red',
             productSize: 'large',
             productType: 'shirt',
-            productDescription: 'this is a shirt',   
-        }
+            productDescription: 'this is a shirt', 
+            
+           displayPrice: function(){
+            console.log(`The price of the product is ${this.productPrice}`);
+           }
+        };
+
+        product.displayPrice(); // The price of the product is 1000
 
         console.log(product.companyName); // sofibrand
         console.log(product.productName); // sofi
@@ -27,6 +33,19 @@
         console.log(product.productType); // shirt
         product.companyName = 'sofi brand'; // update the company name
         console.log(product); // sofi brand
+
+        // let score = {
+        //     win: 0,
+        //     tie: 0,
+        //     lose: 0,
+        // }
+        // console.log(score.win); // 0
+        // console.log(score.tie); // 0        
+        // console.log(score.lose); // 0
+        // score.win = 1; // update the win score
+        // score.tie = 1; // update the tie score
+        // score.lose = 1; // update the lose score
+        // console.log(score); // { win: 1, tie: 1, lose: 1 }
     </script>
 </body>
 </html>
