@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+
+    <script>
+        let product = {
+            companyName: 'sofibrand',
+            productName: 'sofi',
+            productPrice: 1000,
+            productColor: 'red',
+            productSize: 'large',
+            productType: 'shirt',
+            productDescription: 'this is a shirt',   
+        }
+
+        console.log(product.companyName); // sofibrand
+        console.log(product.productName); // sofi
+        console.log(product.productPrice); // 1000  
+        console.log(product.productColor); // red
+        console.log(product.productSize); // large
+        console.log(product.productType); // shirt
+        product.companyName = 'sofi brand'; // update the company name
+        console.log(product); // sofi brand
+    </script>
+</body>
+</html>
