@@ -47,19 +47,36 @@
         // score.lose = 1; // update the lose score
         // console.log(score); // { win: 1, tie: 1, lose: 1 }
 
-        function createCircle(){
+        // function createCircle(){
                  
-            return circle = {
-                radius : 5,
-                daimeter : 10,
-                area: 3.14 *5*5,
+        //     return circle = {
+        //         radius : 5,
+        //         daimeter : 10,
+        //         area: 3.14 *5*5,
 
-            }
-
+        //     }
            
-        };
+        // };
 
-        let createCircle1 = circle();
+        // let createCircle = circle();
+
+        // Migration to object
+        let person1 = {
+            name: 'sofi',
+            age: 21,
+        }
+
+        let person2 = {
+            education: 'bachelor',
+            job: 'developer',
+        }
+
+        let person3 = {
+            ...person1,
+            ...person2,
+        }
+
+        console.log(person3); // { name: 'sofi', age: 21, education: 'bachelor', job: 'developer' }
     </script>
 </body>
 </html>
