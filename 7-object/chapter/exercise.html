@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO SHAGUFA ...</h1>
+
+
+
+
+    <script>
+        // task 1
+     let product = {
+        productName: 'laptop',
+        companyName: 'myntra',
+        price: '10000',
+        rating: 4.5,
+    
+     }
+     console.log(product);
+
+     // task 2
+
+    //  let person = {
+    //     name: 'sofi',
+    //     age: 21,
+        
+    //  }
+
+    //  let person2 = {
+    //     education: 'Btech',
+    //     hobbies: 'reading',
+    //     name: 'shagufa',
+    //  }
+
+    //  let person3 = {
+    //     ...person,
+    //     ...person2,
+    //  }
+    //  console.log(person3);
+
+    let person = {
+        name: 'sofi',
+        age: 21,
+        education: 'Btech',
+        hobbies: 'reading',
+     }
+
+       let person2 = person;
+       person2.age = 24;
+       console.log(person);
+
+
+
+     // task 3
+
+     let car = {
+     'car-name': 'audi',
+        model: '2023',
+        price: 2000000,
+     }
+
+     console.log(car['car-name']);
+     console.log(car['model']);
+
+     // task 4
+
+     let  object = {
+        message: 'good job',
+        status: 'completed task',
+     }
+
+     console.log(object);
+
+     let message = object.message;
+     console.log(message);
+
+
+     let status = object.status;
+     console.log(status);
+
+     // task 5
+
+     let book1 = {
+        bookName: 'rich dad poor dad',
+        price: 500,
+        author: 'RobertT Kiyosaki and Sharon Lechter',
+     }
+
+     let book2 = {
+        bookName: 'rich dad and poor dad',
+        price: 500,
+        author: 'Shagufa Anjum',
+     }
+         
+     function isIdenticalProduct(){
+       book1.author ? 'RobertT Kiyosaki and Sharon Lechter' : 'Shagufa Anjum';
+       return isIdenticalProduct;
+     }
+
+     
+
+
+
+    </script>
+</body>
+</html>
