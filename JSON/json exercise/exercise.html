@@ -9,8 +9,28 @@
     <h3 id="greeting"></h3>
 
     <script>
-       let date = new Date();  
-       console.log(date);
+        // date and time
+        // Date and time in JavaScript are represented by the Date object.
+
+        function doGreeting(personName = 'Dear'){
+            let date = new Date();
+            let hours = date.getHours();
+            let heading = document.querySelector('#greeting');
+
+            if(hours > 5 && hours <12){
+
+                heading.innerHTML = `Good Morning ${personName}`;
+
+            }
+            else if (hours >12 && hours < 18){
+                heading.innerHTML = `Good Afternoon ${personName}`;
+            }else{
+               heading.innerHTML = `Good Night ${personName}`;
+            }
+
+       }
+
+       doGreeting();
     </script>
 
 </body>
