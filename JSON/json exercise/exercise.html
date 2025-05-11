@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        button{
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            border: none;
+            border-radius: 5;
+        }
+        
+        .js-odd{
+            background-color: aqua;
+        }
+
+        .js-even{
+            background-color: chartreuse;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
     <h3 id="greeting"></h3>
 
+    <button id="button" onclick="onClickButton()"></button>
+
+
+
     <script>
-        // date and time
-        // Date and time in JavaScript are represented by the Date object.
+       
+       let noOfTimeClick = localStorage.getItem('noOfTimeClick') || 0;
+
+
+        function onClickButton(){
+           
+            noOfTimeClick++;
+
+            localStorage.setItem('noOfTimeClick', noOfTimeClick);
+            updateFunction();
+
+           
+        }
+
+      function updateFunction(){
+         let button = document.querySelector('#button');
+        
+            if(noOfTimeClick %2 === 0){
+                 button.classList.remove('js-even');
+                 button.classList.add('js-odd');
+            } else{
+                button.classList.remove('js-odd');
+                button.classList.add('js-even')
+            }
+
+            button.innerHTML = noOfTimeClick;
+      }
+
+      updateFunction();
+
+
+
 
         function doGreeting(personName = 'Dear'){
             let date = new Date();
