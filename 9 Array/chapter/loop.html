@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loops and Accumulate Pattern</title>
 </head>
 <body>
     <script>
         let number = 1;
-        // for loop
-        for(let i=1; i<=10; i++){
+
+        // For loop
+        for(let i = 1; i <= 10; i++){
             console.log(i);
         }
 
-        // while loop
-
+        // While loop
         while(number <= 100){
             console.log("Shagufa Anjum!");
+            number++;
         }
-        // do while loop
+
+        // Do while loop
         do {
-            console.log("Sofi Khan!")
-        }while(number <=15 );
-        
+            console.log("Sofi Khan!");
+            number++;
+        } while(number <= 115);
+
+        // Accumulate Pattern
+        let nums = [1, 2, 3, 4, 5];
+        for(let i = 0; i < nums.length; i++){
+            nums[i] = nums[i] * nums[i];  // modifies nums array
+        }
+        console.log("Squared nums:", nums);
+
+        // If you want a separate array:
+        let input = [6, 7, 8];
+        let squares = [];
+        for(let i = 0; i < input.length; i++){
+            squares.push(input[i] * input[i]);
+        }
+        console.log("Squares of input:", squares);
     </script>
 </body>
 </html>
