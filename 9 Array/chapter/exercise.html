@@ -16,7 +16,71 @@
         nums1.unshift(4);        // Add at beginning
         console.log("After unshift:", nums1);
 
-       
+        // ✅ Task 2: Find index of a specific element
+        let target = 5;
+        let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (let i = 0; i < array2.length; i++) {
+            if (array2[i] === target) {
+                console.log("Index of", target, "is:", i);
+            }
+        }
+
+        // ✅ Task 3: Slice array (make a copy)
+        let numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log("Original array:", numbers3);
+        let copy3 = numbers3.slice();  // Copy of array
+        console.log("Copied array:", copy3);
+
+        // ✅ Task 4: Print first 5 prime numbers using while loop
+        let num4 = 2;
+        let count4 = 0;
+
+        while (count4 < 5) {
+            let i = 2;
+            let isPrime = true;
+
+            while (i < num4) {
+                if (num4 % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
+            }
+
+            if (isPrime) {
+                console.log("Prime:", num4);
+                count4++;
+            }
+
+            num4++;
+        }
+
+        // ✅ Task 5: Reverse loop from 10 to 1
+        for (let i = 10; i >= 1; i--) {
+            console.log("Countdown:", i);
+        }
+
+        // ✅ Task 6: Print only positive numbers from array
+        let nums6 = [1, -6, 5, 7, -98];
+        for (let i = 0; i < nums6.length; i++) {
+            if (nums6[i] < 0) {
+                continue;
+            }
+            console.log("Positive number:", nums6[i]);
+        }
+
+        // ✅ Task 7: Copy strings from one array to another
+        let names7 = ['kg', 'sofi', 'shagufa', 'anjum'];
+        let strings7 = [];
+
+        for (let i = 0; i < names7.length; i++) {
+            strings7.push(names7[i]);
+        }
+
+        console.log("Copied names:", strings7);
+
+        // task complete Here 
+
     </script>
 </body>
 </html>
