@@ -10,7 +10,21 @@
        // Anonymous function
        let sum = function(num1, num2){
         return num1 + num2;
-       }
+       };
+
+       let result = sum(10, 20);
+         console.log(result); // 30
+
+       let newResult = sum(20, 30) + 40;
+         console.log(newResult); // 90
+
+       // Function as a parameter of three other function
+        let sumOfThree = function(num1, num2, num3, sumOfTwoNum){
+            let sum1 = sumOfTwoNum(num1, num2);
+            return sum1 + num3;
+         }
+
+         console.log(sumOfThree(10, 20, 30, sum)); // 60
     </Script>
 </body>
 </html>
