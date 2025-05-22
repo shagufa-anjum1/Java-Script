@@ -26,20 +26,43 @@
 
     //      console.log(sumOfThree(10, 20, 30, sum)); // 60
 
-    // Arrow function
-    let sum = (num1, num2) => {
-        return num1 + num2;
+    // // Arrow function
+    // let sum = (num1, num2) => {
+    //     return num1 + num2;
+    // }
+
+    // let result = sum(10, 20);
+    //   console.log(result); // 30    
+
+    //   let Squre = num =>  num * num;
+    //   console.log(Squre(10)); // 100
+
+    //   let sum2 = (num1, num2) => num1 + num2;
+    //   let result2 = sum2(10, 20);
+    //   console.log(result2); // 30
+
+    // set timeout function 
+
+    let alarm = function (){
+        console.log("Alarm is ringing");
     }
 
-    let result = sum(10, 20);
-      console.log(result); // 30    
+    setTimeout(alarm, 5000); // 5 second
 
-      let Squre = num =>  num * num;
-      console.log(Squre(10)); // 100
+    console.log("Alarm is set for 5 seconds");
 
-      let sum2 = (num1, num2) => num1 + num2;
-      let result2 = sum2(10, 20);
-      console.log(result2); // 30
+    // or 
+
+    // let setTimerID = setTimeout(console.log("Alarm is ringing"), 1000); // 5 second
+    // console.log(`Alarm is set for 5 seconds ${setTimerID}`);
+    // clearTimeout(setTimerID); // clear the timer
+    // console.log("Alarm is cleared");
+
+    let intervalID =  setInterval(alarm, 1000);
+    setInterval( () => clearInterval(intervalID), 5000);
+     // clear the interval after 5 seconds
+
+    
 
     </Script>
 </body>
