@@ -6,7 +6,17 @@
     <title>Advance Function</title>
 </head>
 <body>
+
+    <h1>Advance Functions</h1>
+    <p>In this chapter, we will learn about different types of functions in JavaScript.</p>
+    <button id="myButton">Click Me</button>
     <Script>
+        // Events
+        let btnElement = document.querySelector("#myButton");
+        btnElement.addEventListener("click", function() {
+            console.log("Button clicked");
+        });
+
        // Anonymous function
     //    let sum = function(num1, num2){
     //     return num1 + num2;
@@ -43,13 +53,13 @@
 
     // set timeout function 
 
-    let alarm = function (){
-        console.log("Alarm is ringing");
-    }
+    //let alarm = function (){
+    //    console.log("Alarm is ringing");
+    // }
 
-    setTimeout(alarm, 5000); // 5 second
+   // setTimeout(alarm, 5000); // 5 second
 
-    console.log("Alarm is set for 5 seconds");
+    // console.log("Alarm is set for 5 seconds");
 
     // or 
 
@@ -58,9 +68,11 @@
     // clearTimeout(setTimerID); // clear the timer
     // console.log("Alarm is cleared");
 
-    let intervalID =  setInterval(alarm, 1000);
-    setInterval( () => clearInterval(intervalID), 5000);
-     // clear the interval after 5 seconds
+   // let intervalID =  setInterval(alarm, 1000);
+   // setInterval( () => clearInterval(intervalID), 5000);
+    // clear the interval after 5 seconds
+
+    // EVENTS
 
     
 
