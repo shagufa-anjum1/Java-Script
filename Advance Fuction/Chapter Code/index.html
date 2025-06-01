@@ -13,9 +13,15 @@
     <Script>
         // Events
         let btnElement = document.querySelector("#myButton");
-        btnElement.addEventListener("click", function() {
-            console.log("Button clicked");
-        });
+        let behavior = event => console.log('I M clicked the button');
+
+        btnElement.addEventListener("click",  behavior) ;
+        
+
+        let printDate = event => console.log(new Date());
+        btnElement.addEventListener("click", printDate);
+
+        btnElement.removeEventListener('click', behavior);
 
        // Anonymous function
     //    let sum = function(num1, num2){
