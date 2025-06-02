@@ -79,17 +79,39 @@
     // clear the interval after 5 seconds
 
     // For Each loop
-    let arr = [1, 2, 3, 4, 5];
+    // let arr = [1, 2, 3, 4, 5];
     
-    for(let i=0; i<arr.length; i++){
-        console.log(arr[i]);
-    }
+    // for(let i=0; i<arr.length; i++){
+    //     console.log(arr[i]);
+    // }
 
-    arr.forEach(function(num) {
-        console.log(num);
+    // arr.forEach(function(num) {
+    //     console.log(num);
+    // });
+    //        //or
+    // arr.forEach(num => console.log(num)); 
+
+    let arr = [1, 2, 3, 4, 5];
+
+    let oddsNum = arr.filter((num, index) => {
+        if(num %2 === 1){
+            return true;
+        }else{
+            return false;
+        }
     });
-           //or
-    arr.forEach(num => console.log(num)); 
+
+    console.log(oddsNum);
+
+    let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let newOdds = arr.filter((num, index) => {
+        return num%2 === 1;
+    });
+
+    console.log(newOdds);
+
+
 
     
 
