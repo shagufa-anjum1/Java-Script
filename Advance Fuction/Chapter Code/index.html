@@ -11,17 +11,17 @@
     <p>In this chapter, we will learn about different types of functions in JavaScript.</p>
     <button id="myButton">Click Me</button>
     <Script>
-        // Events
-        let btnElement = document.querySelector("#myButton");
-        let behavior = event => console.log('I M clicked the button');
+        // // Events
+        // let btnElement = document.querySelector("#myButton");
+        // let behavior = event => console.log('I M clicked the button');
 
-        btnElement.addEventListener("click",  behavior) ;
+        // btnElement.addEventListener("click",  behavior) ;
         
 
-        let printDate = event => console.log(new Date());
-        btnElement.addEventListener("click", printDate);
+        // let printDate = event => console.log(new Date());
+        // btnElement.addEventListener("click", printDate);
 
-        btnElement.removeEventListener('click', behavior);
+        // btnElement.removeEventListener('click', behavior);
 
        // Anonymous function
     //    let sum = function(num1, num2){
@@ -78,7 +78,18 @@
    // setInterval( () => clearInterval(intervalID), 5000);
     // clear the interval after 5 seconds
 
-    // EVENTS
+    // For Each loop
+    let arr = [1, 2, 3, 4, 5];
+    
+    for(let i=0; i<arr.length; i++){
+        console.log(arr[i]);
+    }
+
+    arr.forEach(function(num) {
+        console.log(num);
+    });
+           //or
+    arr.forEach(num => console.log(num)); 
 
     
 
